@@ -94,6 +94,8 @@
             text-decoration: none;
             font-weight: 600;
             transition: all 0.2s;
+            cursor: pointer;
+            border: none;
         }
         
         .btn-primary {
@@ -110,11 +112,22 @@
         .btn-outline {
             border: 2px solid #2d6a4f;
             color: #2d6a4f;
+            background: transparent;
         }
         
         .btn-outline:hover {
             background: #2d6a4f;
             color: white;
+            transform: translateY(-2px);
+        }
+        
+        .btn-success {
+            background: #ff9800;
+            color: white;
+        }
+        
+        .btn-success:hover {
+            background: #e68a00;
             transform: translateY(-2px);
         }
         
@@ -128,6 +141,13 @@
             font-size: 32px;
             margin-bottom: 40px;
             color: #1b4d3e;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 18px;
+            color: #64748b;
+            margin-bottom: 50px;
         }
         
         /* Features Grid */
@@ -163,6 +183,198 @@
         
         .feature-card p {
             color: #64748b;
+        }
+        
+        /* Pricing Cards */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .pricing-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+            position: relative;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .pricing-card.popular {
+            border: 2px solid #2d6a4f;
+            transform: scale(1.02);
+        }
+        
+        .popular-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #2d6a4f;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        .pricing-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #1e293b;
+        }
+        
+        .price {
+            font-size: 36px;
+            font-weight: 700;
+            color: #2d6a4f;
+            margin-bottom: 5px;
+        }
+        
+        .price span {
+            font-size: 16px;
+            font-weight: normal;
+            color: #64748b;
+        }
+        
+        .price-desc {
+            color: #64748b;
+            margin-bottom: 20px;
+        }
+        
+        .features-list {
+            list-style: none;
+            margin: 20px 0;
+            text-align: left;
+        }
+        
+        .features-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .features-list li:before {
+            content: "✓";
+            color: #2d6a4f;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        /* FAQ Section */
+        .faq-grid {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: white;
+            margin-bottom: 15px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .faq-question {
+            padding: 18px 20px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-question:hover {
+            background: #f8fafc;
+        }
+        
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            color: #64748b;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 0 20px 18px 20px;
+            max-height: 300px;
+        }
+        
+        .faq-icon {
+            font-size: 20px;
+            transition: transform 0.3s;
+        }
+        
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+        
+        /* Contact Form */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            background: white;
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        
+        .contact-info {
+            background: linear-gradient(135deg, #2d6a4f 0%, #1b4d3e 100%);
+            border-radius: 20px;
+            padding: 30px;
+            color: white;
+        }
+        
+        .contact-info h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+        
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form select {
+            width: 100%;
+            padding: 12px 15px;
+            margin-bottom: 15px;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            font-size: 14px;
+        }
+        
+        .contact-form textarea {
+            resize: vertical;
+        }
+        
+        /* CTA Section */
+        .cta {
+            background: linear-gradient(135deg, #1b4d3e 0%, #0f2b22 100%);
+            color: white;
+            text-align: center;
+            padding: 60px 0;
+        }
+        
+        .cta h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+        
+        .cta p {
+            margin-bottom: 25px;
+            opacity: 0.9;
         }
         
         /* Footer */
@@ -205,7 +417,14 @@
             }
             .btn-primary, .btn-outline {
                 display: block;
-                margin: 10px 0;
+                margin: 10px auto;
+                width: 80%;
+            }
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            .pricing-card.popular {
+                transform: scale(1);
             }
         }
     </style>
@@ -221,10 +440,11 @@
                 </div>
                 <div class="nav-links">
                     <a href="#">होम</a>
-                    <a href="#">सुविधाएँ</a>
-                    <a href="#">प्लान</a>
-                    <a href="#">संपर्क</a>
-                    <a href="#">लॉगिन</a>
+                    <a href="#features">सुविधाएँ</a>
+                    <a href="#pricing">प्लान</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#contact">संपर्क</a>
+                    <a href="#" class="btn-primary" style="background: #ff9800; padding: 8px 20px;">लॉगिन</a>
                 </div>
             </nav>
         </div>
@@ -235,13 +455,13 @@
         <div class="container">
             <h1>स्मार्ट होटल प्रबंधन प्रणाली</h1>
             <p>बुकिंग, कमरे, भुगतान और रिपोर्ट - सब कुछ एक साथ। अपने होटल को बनाएं डिजिटल और प्रोफेशनल।</p>
-            <a href="#" class="btn btn-primary">मुफ्त डेमो लें</a>
-            <a href="#" class="btn btn-outline">प्लान देखें</a>
+            <a href="#contact" class="btn btn-primary">मुफ्त डेमो लें</a>
+            <a href="#pricing" class="btn btn-outline">प्लान देखें</a>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section class="section">
+    <section id="features" class="section">
         <div class="container">
             <h2 class="section-title">✨ मुख्य सुविधाएँ</h2>
             <div class="features-grid">
@@ -275,7 +495,184 @@
                     <h3>सूचना प्रणाली</h3>
                     <p>हर जरूरी अपडेट तुरंत पाएं</p>
                 </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>यूजर मैनेजमेंट</h3>
+                    <p>एडमिन, मैनेजर, रिसेप्शन - तीन लोगों का एक्सेस</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔐</div>
+                    <h3>ओटीपी वेरिफिकेशन</h3>
+                    <p>सुरक्षित और विश्वसनीय बुकिंग</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>मोबाइल फ्रेंडली</h3>
+                    <p>मोबाइल, टैबलेट, लैपटॉप - सब पर काम करता है</p>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="section" style="background: #f8fafc;">
+        <div class="container">
+            <h2 class="section-title">💰 हमारे प्लान</h2>
+            <p class="section-subtitle">अपनी जरूरत के अनुसार प्लान चुनें</p>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>बेसिक</h3>
+                    <div class="price">₹1,999<span>/महीना</span></div>
+                    <div class="price-desc">छोटे होटल के लिए बिल्कुल सही</div>
+                    <ul class="features-list">
+                        <li>1 होटल</li>
+                        <li>10 कमरे</li>
+                        <li>बुकिंग मैनेजमेंट</li>
+                        <li>कमरा प्रबंधन</li>
+                        <li>ग्राहक प्रबंधन</li>
+                        <li>बेसिक रिपोर्ट</li>
+                        <li>ईमेल सपोर्ट</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary" style="width: 100%;">चुनें</a>
+                </div>
+                <div class="pricing-card popular">
+                    <div class="popular-badge">लोकप्रिय</div>
+                    <h3>प्रो</h3>
+                    <div class="price">₹3,999<span>/महीना</span></div>
+                    <div class="price-desc">बड़े होटल के लिए पूरा सॉल्यूशन</div>
+                    <ul class="features-list">
+                        <li>3 होटल</li>
+                        <li>30 कमरे</li>
+                        <li>बुकिंग मैनेजमेंट</li>
+                        <li>कमरा प्रबंधन</li>
+                        <li>पेमेंट ट्रैकिंग</li>
+                        <li>इनवॉइस जनरेशन</li>
+                        <li>एडवांस रिपोर्ट</li>
+                        <li>प्रायोरिटी सपोर्ट</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary" style="width: 100%;">चुनें</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>प्रीमियम</h3>
+                    <div class="price">₹7,999<span>/महीना</span></div>
+                    <div class="price-desc">बड़े बिजनेस के लिए</div>
+                    <ul class="features-list">
+                        <li>असीमित होटल</li>
+                        <li>असीमित कमरे</li>
+                        <li>सभी फीचर्स</li>
+                        <li>व्हाट्सएप नोटिफिकेशन</li>
+                        <li>चैनल मैनेजर</li>
+                        <li>एपीएल एक्सेस</li>
+                        <li>24x7 फोन सपोर्ट</li>
+                        <li>डेडिकेटेड मैनेजर</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary" style="width: 100%;">चुनें</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section">
+        <div class="container">
+            <h2 class="section-title">❓ अक्सर पूछे जाने वाले सवाल</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        क्या मैं पहले डेमो ले सकता हूँ?
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        हाँ, बिल्कुल! हम 7 दिन का मुफ्त डेमो देते हैं। डेमो के लिए हमसे संपर्क करें।
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        क्या मैं कभी भी प्लान बदल सकता हूँ?
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        हाँ, आप कभी भी अपना प्लान अपग्रेड या डाउनग्रेड कर सकते हैं। बदलाव आपके अगले बिलिंग साइकल से लागू होगा।
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        क्या मेरा डेटा सुरक्षित है?
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        बिल्कुल! आपका डेटा Google की सुरक्षित सर्वर पर स्टोर होता है। हम आपका डेटा किसी तीसरे पक्ष के साथ साझा नहीं करते।
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        क्या सपोर्ट मिलता है?
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        हाँ, सभी प्लान में ईमेल सपोर्ट शामिल है। प्रो और प्रीमियम प्लान में प्रायोरिटी और 24x7 सपोर्ट मिलता है।
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        क्या मैं एक से अधिक होटल जोड़ सकता हूँ?
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        हाँ, प्रो प्लान में 3 होटल और प्रीमियम प्लान में असीमित होटल जोड़ सकते हैं।
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        क्या मोबाइल ऐप भी है?
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        हमारा डैशबोर्ड मोबाइल-फ्रेंडली है, जो फोन, टैबलेट और लैपटॉप सब पर अच्छे से काम करता है।
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section" style="background: #f8fafc;">
+        <div class="container">
+            <h2 class="section-title">📞 संपर्क करें</h2>
+            <p class="section-subtitle">आज ही संपर्क करें और अपना होटल बनाएं स्मार्ट</p>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>हमसे जुड़ें</h3>
+                    <p>📍 नई दिल्ली, भारत</p>
+                    <p>📞 +91 98765 43210</p>
+                    <p>📧 support@hoteldashboard.com</p>
+                    <p>💬 WhatsApp: +91 98765 43210</p>
+                    <p style="margin-top: 20px;">🎧 सपोर्ट टाइम: सोम-शनि (सुबह 10 - शाम 7)</p>
+                </div>
+                <div class="contact-form">
+                    <input type="text" placeholder="आपका नाम" id="contactName">
+                    <input type="email" placeholder="ईमेल पता" id="contactEmail">
+                    <input type="tel" placeholder="फोन नंबर" id="contactPhone">
+                    <select id="contactPlan">
+                        <option value="">प्लान चुनें</option>
+                        <option>बेसिक (₹1,999/महीना)</option>
+                        <option>प्रो (₹3,999/महीना)</option>
+                        <option>प्रीमियम (₹7,999/महीना)</option>
+                        <option>डेमो चाहिए</option>
+                    </select>
+                    <textarea rows="4" placeholder="आपका संदेश..." id="contactMessage"></textarea>
+                    <button class="btn btn-success" onclick="sendContact()" style="width: 100%;">📩 संदेश भेजें</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>तैयार हैं अपने होटल को स्मार्ट बनाने के लिए?</h2>
+            <p>आज ही शुरू करें, 7 दिन का मुफ्त डेमो पाएं</p>
+            <a href="#contact" class="btn btn-primary" style="background: #ff9800; color: #1e293b;">अभी शुरू करें →</a>
         </div>
     </section>
 
@@ -284,11 +681,13 @@
         <div class="container">
             <div class="footer-links">
                 <a href="#">होम</a>
+                <a href="#features">सुविधाएँ</a>
+                <a href="#pricing">प्लान</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">संपर्क</a>
                 <a href="#">अबाउट</a>
-                <a href="#">सुविधाएँ</a>
-                <a href="#">प्लान</a>
-                <a href="#">कॉन्टैक्ट</a>
-                <a href="#">प्राइवेसी पॉलिसी</a>
+                <a href="#">टर्म्स</a>
+                <a href="#">प्राइवेसी</a>
             </div>
             <div class="copyright">
                 © 2025 Hotel Dashboard | सभी अधिकार सुरक्षित
@@ -296,5 +695,47 @@
         </div>
     </footer>
 
+    <script>
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+        
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if(target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+        
+        // Contact Form Function
+        function sendContact() {
+            const name = document.getElementById('contactName').value;
+            const email = document.getElementById('contactEmail').value;
+            const phone = document.getElementById('contactPhone').value;
+            const plan = document.getElementById('contactPlan').value;
+            const message = document.getElementById('contactMessage').value;
+            
+            if(!name || !email) {
+                alert("कृपया अपना नाम और ईमेल दर्ज करें");
+                return;
+            }
+            
+            alert("धन्यवाद! हम आपसे जल्द ही संपर्क करेंगे।");
+            
+            document.getElementById('contactName').value = '';
+            document.getElementById('contactEmail').value = '';
+            document.getElementById('contactPhone').value = '';
+            document.getElementById('contactPlan').value = '';
+            document.getElementById('contactMessage').value = '';
+        }
+    </script>
 </body>
-  </html>
+            </html>
