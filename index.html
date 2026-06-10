@@ -187,11 +187,11 @@
         
         /* Pricing Cards */
         .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 30px;
-        }
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
         
         .pricing-card {
             background: white;
@@ -515,62 +515,126 @@
     </section>
 
     <!-- Pricing Section -->
-    <section id="pricing" class="section" style="background: #f8fafc;">
-        <div class="container">
-            <h2 class="section-title">💰 Pricing Plans</h2>
-            <p class="section-subtitle">Choose the plan that fits your needs</p>
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <h3>Basic</h3>
-                    <div class="price">₹1,999<span>/month</span></div>
-                    <div class="price-desc">Perfect for small hotels</div>
-                    <ul class="features-list">
-                        <li>1 Hotel</li>
-                        <li>10 Rooms</li>
-                        <li>Booking Management</li>
-                        <li>Room Management</li>
-                        <li>Customer Management</li>
-                        <li>Basic Reports</li>
-                        <li>Email Support</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-primary" style="width: 100%;">Choose Plan</a>
-                </div>
-                <div class="pricing-card popular">
-                    <div class="popular-badge">Popular</div>
-                    <h3>Pro</h3>
-                    <div class="price">₹3,999<span>/month</span></div>
-                    <div class="price-desc">Complete solution for growing hotels</div>
-                    <ul class="features-list">
-                        <li>3 Hotels</li>
-                        <li>30 Rooms</li>
-                        <li>Booking Management</li>
-                        <li>Room Management</li>
-                        <li>Payment Tracking</li>
-                        <li>Invoice Generation</li>
-                        <li>Advanced Reports</li>
-                        <li>Priority Support</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-primary" style="width: 100%;">Choose Plan</a>
-                </div>
-                <div class="pricing-card">
-                    <h3>Premium</h3>
-                    <div class="price">₹7,999<span>/month</span></div>
-                    <div class="price-desc">For large hotel chains</div>
-                    <ul class="features-list">
-                        <li>Unlimited Hotels</li>
-                        <li>Unlimited Rooms</li>
-                        <li>All Features Included</li>
-                        <li>WhatsApp Notifications</li>
-                        <li>Channel Manager</li>
-                        <li>API Access</li>
-                        <li>24x7 Phone Support</li>
-                        <li>Dedicated Manager</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-primary" style="width: 100%;">Choose Plan</a>
-                </div>
+<section id="pricing" class="section" style="background: #f8fafc;">
+    <div class="container">
+        <h2 class="section-title">💰 Choose Your Plan</h2>
+        <p class="section-subtitle">Save more with long-term plans</p>
+        <div class="pricing-grid">
+            
+            <!-- Plan 1: 1 Month -->
+            <div class="pricing-card">
+                <h3>Monthly</h3>
+                <div class="price">₹450<span>/month</span></div>
+                <div class="price-desc">Perfect for trial or short-term needs</div>
+                <ul class="features-list">
+                    <li>1 Month Access</li>
+                    <li>All Basic Features</li>
+                    <li>Booking Management</li>
+                    <li>Room Management</li>
+                    <li>Customer Management</li>
+                    <li>Email Support</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary" style="width: 100%;">Choose Plan</a>
             </div>
+            
+            <!-- Plan 2: 3 Months -->
+            <div class="pricing-card">
+                <h3>Quarterly</h3>
+                <div class="price">₹1,300<span>/3 months</span></div>
+                <div class="price-desc">Save ₹50 compared to monthly</div>
+                <ul class="features-list">
+                    <li>3 Months Access</li>
+                    <li>All Basic Features</li>
+                    <li>Booking Management</li>
+                    <li>Room Management</li>
+                    <li>Customer Management</li>
+                    <li>Payment Tracking</li>
+                    <li>Priority Email Support</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary" style="width: 100%;">Choose Plan</a>
+            </div>
+            
+            <!-- Plan 3: 6 Months (Popular) -->
+            <div class="pricing-card popular">
+                <div class="popular-badge">🔥 Best Value</div>
+                <h3>Half Yearly</h3>
+                <div class="price">₹2,500<span>/6 months</span></div>
+                <div class="price-desc">Save ₹200 - Most Popular!</div>
+                <ul class="features-list">
+                    <li>6 Months Access</li>
+                    <li>All Basic + Pro Features</li>
+                    <li>Booking Management</li>
+                    <li>Room Management</li>
+                    <li>Payment Tracking</li>
+                    <li>Invoice Generation</li>
+                    <li>Advanced Reports</li>
+                    <li>Priority Support</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary" style="width: 100%;">Choose Plan</a>
+            </div>
+            
+            <!-- Plan 4: 12 Months -->
+            <div class="pricing-card">
+                <h3>Yearly</h3>
+                <div class="price">₹4,800<span>/year</span></div>
+                <div class="price-desc">Save ₹600 - Best for long-term</div>
+                <ul class="features-list">
+                    <li>12 Months Access</li>
+                    <li>All Premium Features</li>
+                    <li>Booking Management</li>
+                    <li>Room Management</li>
+                    <li>Payment Tracking</li>
+                    <li>Invoice Generation</li>
+                    <li>Advanced Reports</li>
+                    <li>WhatsApp Notifications</li>
+                    <li>24x7 Phone Support</li>
+                    <li>Dedicated Manager</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary" style="width: 100%;">Choose Plan</a>
+            </div>
+            
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- Plan Comparison Table -->
+<div class="content-card" style="margin-top: 40px; overflow-x: auto;">
+    <h2 style="text-align: center;">📊 Plan Comparison</h2>
+    <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+        <thead>
+            <tr style="background: #2d6a4f; color: white;">
+                <th style="padding: 12px; text-align: left;">Feature</th>
+                <th style="padding: 12px; text-align: center;">Monthly</th>
+                <th style="padding: 12px; text-align: center;">Quarterly</th>
+                <th style="padding: 12px; text-align: center;">Half Yearly</th>
+                <th style="padding: 12px; text-align: center;">Yearly</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 10px;">Price</td>
+                <td style="padding: 10px; text-align: center;">₹450</td>
+                <td style="padding: 10px; text-align: center;">₹1,300</td>
+                <td style="padding: 10px; text-align: center;">₹2,500</td>
+                <td style="padding: 10px; text-align: center;">₹4,800</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 10px;">Per Month Cost</td>
+                <td style="padding: 10px; text-align: center;">₹450</td>
+                <td style="padding: 10px; text-align: center;">₹433</td>
+                <td style="padding: 10px; text-align: center;">₹417</td>
+                <td style="padding: 10px; text-align: center;">₹400</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 10px;">Total Savings</td>
+                <td style="padding: 10px; text-align: center;">-</td>
+                <td style="padding: 10px; text-align: center;">₹50</td>
+                <td style="padding: 10px; text-align: center;">₹200</td>
+                <td style="padding: 10px; text-align: center;">₹600</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
     <!-- FAQ Section -->
     <section id="faq" class="section">
@@ -733,4 +797,4 @@
         }
     </script>
 </body>
-                    </html>
+    </html>
