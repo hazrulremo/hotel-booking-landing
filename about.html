@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Hotel Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f7fb;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2d6a4f 0%, #1b4d3e 100%);
+            color: white;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .logo span {
+            font-size: 28px;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+        
+        .btn-primary {
+            background: #ff9800;
+            padding: 8px 20px;
+            border-radius: 40px;
+            color: #1e293b !important;
+        }
+        
+        .page-header {
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .page-header h1 {
+            font-size: 48px;
+            color: #1b4d3e;
+            margin-bottom: 15px;
+        }
+        
+        .page-header p {
+            font-size: 18px;
+            color: #475569;
+        }
+        
+        .content-section {
+            padding: 60px 0;
+        }
+        
+        .content-card {
+            background: white;
+            border-radius: 24px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        
+        .content-card h2 {
+            color: #2d6a4f;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        
+        .content-card h3 {
+            color: #1b4d3e;
+            margin: 20px 0 10px 0;
+            font-size: 20px;
+        }
+        
+        .content-card p {
+            color: #475569;
+            margin-bottom: 15px;
+        }
+        
+        .content-card ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .content-card li {
+            color: #475569;
+            margin-bottom: 8px;
+        }
+        
+        .footer {
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links a {
+            color: #94a3b8;
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .copyright {
+            font-size: 12px;
+        }
+        
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 32px;
+            }
+            .nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .content-card {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <span>🏨</span> Hotel Dashboard
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="index.html#features">Features</a>
+                    <a href="index.html#pricing">Pricing</a>
+                    <a href="index.html#contact">Contact</a>
+                    <a href="#" class="btn-primary">Login</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>About Us</h1>
+            <p>Empowering hotels with smart technology</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="content-card">
+                <h2>Who We Are</h2>
+                <p>Hotel Dashboard is a complete hotel management solution designed to help hotels, homestays, and resorts manage their daily operations efficiently. We are a team of technology enthusiasts dedicated to simplifying hotel management through innovative digital solutions.</p>
+                
+                <h2>Our Mission</h2>
+                <p>To empower every hotel business with affordable, easy-to-use, and powerful management tools that save time, reduce costs, and increase revenue.</p>
+                
+                <h2>Why Choose Us?</h2>
+                <ul>
+                    <li>✅ 100% Digital - No paperwork required</li>
+                    <li>✅ 24x7 Access - Manage from anywhere</li>
+                    <li>✅ Secure & Reliable - Your data is safe with us</li>
+                    <li>✅ Affordable Plans - Solutions for every budget</li>
+                    <li>✅ Dedicated Support - We're here to help you grow</li>
+                </ul>
+                
+                <h2>Our Vision</h2>
+                <p>To become the most trusted and widely used hotel management platform in India, helping thousands of hotels go digital and grow their business.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+            <div class="copyright">
+                © 2025 Hotel Dashboard | All Rights Reserved
+            </div>
+        </div>
+    </footer>
+
+</body>
+  </html>
