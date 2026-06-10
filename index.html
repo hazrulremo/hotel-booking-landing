@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Dashboard | होटल प्रबंधन प्रणाली</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f7fb;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #2d6a4f 0%, #1b4d3e 100%);
+            color: white;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .logo span {
+            font-size: 28px;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.2s;
+        }
+        
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #1b4d3e;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            color: #475569;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        
+        .btn-primary {
+            background: #2d6a4f;
+            color: white;
+            margin-right: 15px;
+        }
+        
+        .btn-primary:hover {
+            background: #1b4d3e;
+            transform: translateY(-2px);
+        }
+        
+        .btn-outline {
+            border: 2px solid #2d6a4f;
+            color: #2d6a4f;
+        }
+        
+        .btn-outline:hover {
+            background: #2d6a4f;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        /* Section */
+        .section {
+            padding: 60px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+            color: #1b4d3e;
+        }
+        
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        
+        .feature-card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #2d6a4f;
+        }
+        
+        .feature-card p {
+            color: #64748b;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links a {
+            color: #94a3b8;
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .copyright {
+            font-size: 12px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+            .nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .btn-primary, .btn-outline {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <span>🏨</span> Hotel Dashboard
+                </div>
+                <div class="nav-links">
+                    <a href="#">होम</a>
+                    <a href="#">सुविधाएँ</a>
+                    <a href="#">प्लान</a>
+                    <a href="#">संपर्क</a>
+                    <a href="#">लॉगिन</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>स्मार्ट होटल प्रबंधन प्रणाली</h1>
+            <p>बुकिंग, कमरे, भुगतान और रिपोर्ट - सब कुछ एक साथ। अपने होटल को बनाएं डिजिटल और प्रोफेशनल।</p>
+            <a href="#" class="btn btn-primary">मुफ्त डेमो लें</a>
+            <a href="#" class="btn btn-outline">प्लान देखें</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">✨ मुख्य सुविधाएँ</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📅</div>
+                    <h3>ऑनलाइन बुकिंग</h3>
+                    <p>सेकेंडों में बुकिंग करें, ओटीपी वेरिफिकेशन के साथ सुरक्षित</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛏️</div>
+                    <h3>कमरा प्रबंधन</h3>
+                    <p>कौन सा कमरा खाली है, कौन सा बुक है - तुरंत पता करें</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>भुगतान ट्रैकिंग</h3>
+                    <p>अग्रिम भुगतान, बकाया राशि - पूरा हिसाब रखें</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🧾</div>
+                    <h3>इनवॉइस जनरेशन</h3>
+                    <p>एक क्लिक में पेशेवर पीडीएफ इनवॉइस डाउनलोड करें</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>रिपोर्ट और विश्लेषण</h3>
+                    <p>बिजनेस ग्रोथ की पूरी रिपोर्ट, चार्ट के साथ</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔔</div>
+                    <h3>सूचना प्रणाली</h3>
+                    <p>हर जरूरी अपडेट तुरंत पाएं</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">होम</a>
+                <a href="#">अबाउट</a>
+                <a href="#">सुविधाएँ</a>
+                <a href="#">प्लान</a>
+                <a href="#">कॉन्टैक्ट</a>
+                <a href="#">प्राइवेसी पॉलिसी</a>
+            </div>
+            <div class="copyright">
+                © 2025 Hotel Dashboard | सभी अधिकार सुरक्षित
+            </div>
+        </div>
+    </footer>
+
+</body>
+  </html>
